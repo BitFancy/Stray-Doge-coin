@@ -6,7 +6,7 @@ import DescriptionTitle from "@/app/components/DescriptionTitle";
 
 export default function About() {
     return (
-        <div className=" w-full h-[100vh] flex justify-center bg-[#D5A64E]">
+        <div className=" w-full h-[100vh] flex justify-center bg-[#D5A64E]" id="aboutus">
             <div className="w-[1490px] mx-auto flex justify-between">
                 <div className="w-full px-[25px] mt-[100px]">
                     <MainFont Maintitle="About Us" fontcolor="#1C0A05" />

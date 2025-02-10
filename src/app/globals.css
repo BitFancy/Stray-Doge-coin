@@ -20,6 +20,12 @@ body {
   font-family: 'KOMIKAX';
 }
 
+a {
+  cursor: pointer;
+  color: #1C0A05;
+  font-size: 16px;
+}
+
 @font-face {
   font-family: 'KOMIKAX';
   src: url('../../public/font/KOMIKAX_.ttf') format('truetype');

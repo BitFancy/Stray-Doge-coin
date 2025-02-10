@@ -39,7 +39,7 @@ const Carddata: Totype[] = [
 
 export default function Tokennomics() {
     return (
-        <div className="flex w-full h-[100vh] bg-[#232323]">
+        <div className="flex w-full h-[100vh] bg-[#232323]" id="tokenomics">
             <div className="w-[1490px] h-full m-auto">
                 <div className="w-full px-[25px] h-full flex flex-col justify-between">
                     <div className="mt-[100px]">

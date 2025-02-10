@@ -43,7 +43,7 @@ const data: Roadmap[] = [
 
 export default function Roadmap() {
     return (
-        <div className="flex w-full h-[100vh] bg-[#D5A64E]">
+        <div className="flex w-full h-[100vh] bg-[#D5A64E]" id="roadmap">
             <div className="w-[1490px] h-full m-auto">
                 <div className="w-full px-[25px] h-full flex flex-col">
                     <div className="mt-[100px]">

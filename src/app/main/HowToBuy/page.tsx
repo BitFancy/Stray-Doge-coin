@@ -36,7 +36,7 @@ const BuyCardData: BuyCardProps[] = [
 export default function HowToBuy() {
 
     return (
-        <div className="flex w-full h-[100vh] bg-[#FFFDC2]">
+        <div className="flex w-full h-[100vh] bg-[#FFFDC2]" id="howtobuy">
             <div className="w-[1490px] h-full m-auto">
                 <div className="w-full px-[25px] mt-[100px]">
                     <MainFont Maintitle="How to buy" fontcolor="#1C0A05" />

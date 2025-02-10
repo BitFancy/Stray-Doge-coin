@@ -18,7 +18,7 @@ const socialButtonData: SocialButtonProps[] = [
 
 export default function Hero() {
     return (
-        <div className=" w-full h-[100vh] flex justify-center bg-[#FFFDC2]">
+        <div className=" w-full h-[100vh] flex justify-center bg-[#FFFDC2]" id='home'>
             <div className='w-[1490px] mx-auto flex flex-col justify-between'>
                 <div className="w-full px-[25px] mt-[200px] flex justify-between items-center">
                     <h1 className='text-[90px] text-[#91571A]'>Experience of</h1>

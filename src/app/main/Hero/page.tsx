@@ -20,18 +20,17 @@ export default function Hero() {
     return (
         <div className=" w-full h-[100vh] flex justify-center bg-[#FFFDC2]" id='home'>
             <div className='w-[1490px] mx-auto flex flex-col justify-between'>
-                <div className="w-full px-[25px] mt-[200px] flex justify-between items-center">
-                    <h1 className='text-[90px] text-[#91571A]'>Experience of</h1>
+                <div className="w-full px-[25px] mt-[200px] flex items-center gap-8">
+                    <h1 className='text-[90px] text-[#91571A]'>Stray Doge</h1>
+                    <h1 className='text-[100px] text-right'>Coin</h1>
                 </div>
 
-                <div className='w-full h-[600px] mx-[25px] flex'>
+                <div className='w-full h-[600px] mx-[25px] flex justify-between'>
                     <div className='flex items-end'>
                         <Image alt="dog" src={Dog} className=" h-[500px] w-auto" />
                     </div>
-                    <div className=''>
-                        <h1 className='text-[100px] text-right'>Stray Doge Coin</h1>
-
-                        <div className='flex gap-10 mt-[100px] justify-center'>
+                    <div className='w-[950px] h-full bg-stamp bg-contain'>
+                        <div className='flex gap-10 mt-[100px]'>
                             {socialButtonData.map((button, index) => (
                                 <SocialButton key={index} buttonname={button.buttonname} buttonIcon={button.buttonIcon} />
                             ))}

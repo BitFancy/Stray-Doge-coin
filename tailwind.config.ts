@@ -22,6 +22,9 @@ export default {
       animation: {
         gradient: 'gradient 8s linear infinite'
       },
+      backgroundImage: {
+        'stamp': "url('/pic/stamp.png')",
+      },
     },
   },
   plugins: [],

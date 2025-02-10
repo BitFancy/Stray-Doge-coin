@@ -1,7 +1,7 @@
 import MainFont from "@/app/components/MainFont";
 import { StaticImageData } from "next/image";
 import BuyCard from "@/app/components/BuyCard";
-import Wallet from '../../../../public/pic/logo.jpg';
+import Wallet from '../../../../public/pic/logo.png';
 
 interface BuyCardProps {
     cardlogo: StaticImageData;

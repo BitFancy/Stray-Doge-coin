@@ -36,11 +36,11 @@ const BuyCardData: BuyCardProps[] = [
 export default function HowToBuy() {
 
     return (
-        <div className="flex w-full h-[100vh] bg-[#FFFDC2]" id="howtobuy">
-            <div className="w-[1490px] h-full m-auto">
-                <div className="w-full px-[25px] mt-[100px]">
+        <div className="flex w-full bg-[#FFFDC2]" id="howtobuy">
+            <div className="lg:w-[1490px] w-full lg:px-[25px] mx-auto">
+                <div className="w-full mt-[50px] flex flex-col items-center">
                     <MainFont Maintitle="How to buy" fontcolor="#1C0A05" />
-                    <div className="flex justify-between mt-[100px]">
+                    <div className="flex lg:justify-between justify-center my-[50px] w-full xs:w-[450px] lg:w-[750px] 3xl:w-full flex-wrap gap-y-5">
                         {
                             BuyCardData.map((data, index) => {
                                 return (
@@ -48,6 +48,7 @@ export default function HowToBuy() {
                                 )
                             })
                         }
+
                     </div>
                 </div>
             </div>

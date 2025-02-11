@@ -43,13 +43,13 @@ const data: Roadmap[] = [
 
 export default function Roadmap() {
     return (
-        <div className="flex w-full h-[100vh] bg-[#D5A64E]" id="roadmap">
-            <div className="w-[1490px] h-full m-auto">
-                <div className="w-full px-[25px] h-full flex flex-col">
-                    <div className="mt-[100px]">
+        <div className="flex w-full bg-[#D5A64E]" id="roadmap">
+            <div className="w-[1490px] xs2:px-[25px] h-full m-auto">
+                <div className="w-full h-full flex flex-col">
+                    <div className="mt-[50px]">
                         <MainFont Maintitle="Roadmap" fontcolor="#232323" />
                     </div>
-                    <div className="flex mt-[100px] justify-between">
+                    <div className="flex my-[50px] justify-center xs2:gap-x-20 flex-wrap gap-y-7">
                         {data.map((item, index) => (
                             <Roadmapcard
                                 key={index}

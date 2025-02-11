@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image"
 
-export default function SocialButton({ buttonname, buttonIcon }: { buttonname: string, buttonIcon: StaticImageData }) {
+export default function SocialButton({ buttonname, buttonIcon, size, Iconsize }: { buttonname: string, size: string, buttonIcon: StaticImageData, Iconsize: string }) {
 
     return (
-        <button className="w-[80px] h-[80px] bg-[#1a1a1a] rounded-[10px] flex justify-center items-center">
-            <Image alt={buttonname} src={buttonIcon} className="" />
+        <button className="bg-[#1a1a1a] rounded-[10px] flex justify-center items-center" style={{ width: size, height: size }}>
+            <Image alt={buttonname} src={buttonIcon} style={{ width: Iconsize }} />
         </button>
     )
 }

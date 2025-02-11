@@ -6,57 +6,84 @@ import TokenomicsCard from "@/app/components/TokenomicsCard";
 interface Totype {
     name: string;
     percentage: string;
-    bgcolor: string;
     height: string;
 }
 const Carddata: Totype[] = [
     {
         name: "Liquidity pool",
         percentage: "60%",
-        bgcolor: "#FFFDC2",
-        height: "500px"
+        height: "60%"
     },
     {
         name: "Community Rewards",
         percentage: "10%",
-        bgcolor: "#828282",
-        height: "200px"
+        height: "20%"
     },
     {
         name: "Development",
         percentage: "20%",
-        bgcolor: "#D5A64E",
-        height: "300px"
+        height: "30%"
     },
     {
         name: "Marketing",
         percentage: "10%",
-        bgcolor: "#91571A",
-        height: "200px"
+        height: "20%"
+    },
+]
+
+const ResponsiveCarddata: Totype[] = [
+    {
+        name: "Liquidity pool",
+        percentage: "60%",
+        height: "60%"
+    },
+    {
+        name: "Community Rewards",
+        percentage: "10%",
+        height: "20%"
+    },
+    {
+        name: "Development",
+        percentage: "20%",
+        height: "30%"
+    },
+    {
+        name: "Marketing",
+        percentage: "10%",
+        height: "20%"
     },
 ]
 
 
+
 export default function Tokennomics() {
     return (
-        <div className="flex w-full h-[100vh] bg-[#232323]" id="tokenomics">
-            <div className="w-[1490px] h-full m-auto">
-                <div className="w-full px-[25px] h-full flex flex-col justify-between">
-                    <div className="mt-[100px]">
+        <div className="flex w-full bg-[#232323]" id="tokenomics">
+            <div className="w-[1490px] lg:px-[25px] m-auto">
+                <div className="w-full flex flex-col justify-between">
 
+                    <div className="mt-[50px] 3xl:block flex justify-center">
                         <MainFont Maintitle="Tokenomics" fontcolor="#FFFDC2" />
                     </div>
-                    <div className="flex justify-end">
-                        <h1 className="w-[700px] text-[30px] text-center text-[#D5A64E] border-2 rounded-[20px] p-[25px] border-[#D5A64E]">Total Supply: $10000USD</h1>
+
+                    <div className="flex justify-center 3xl:justify-end mt-[20px]">
+                        <h1 className="text-[25px] text-center text-[#D5A64E] border-2 rounded-[20px] p-[25px] mx-[5px] lg:mx-0 border-[#D5A64E]">Total Supply: $10000USD</h1>
                     </div>
-                    <div className="flex justify-between mt-[-30px]">
-                        <div className="flex justify-end">
-                            <Image alt="tokenomics" src={DrawDog} width={500} />
+                    <div className="lg:hidden mt-[50px] w-full px-[40px]">
+                        {
+                            ResponsiveCarddata.map((item, index) => (
+                                <TokenomicsCard key={index} name={item.name} percentage={item.percentage} height={item.height} />
+                            ))
+                        }
+                    </div>
+                    <div className="lg:flex justify-between w-full">
+                        <div className="flex items-end">
+                            <Image alt="tokenomics" src={DrawDog} width={400} />
                         </div>
-                        <div className="w-[1000px] flex items-end justify-end">
+                        <div className="lg:flex flex-col mt-[50px] hidden w-[60%]">
                             {
                                 Carddata.map((item, index) => (
-                                    <TokenomicsCard key={index} name={item.name} percentage={item.percentage} bgcolor={item.bgcolor} height={item.height} />
+                                    <TokenomicsCard key={index} name={item.name} percentage={item.percentage} height={item.height} />
                                 ))
                             }
                         </div>

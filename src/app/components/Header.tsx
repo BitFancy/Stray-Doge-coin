@@ -28,7 +28,7 @@ export default function Header() {
             <div className="w-[1490px] mx-auto mt-[10px] px-[25px] flex justify-between items-center">
                 <button className='flex items-center'>
                     <Image width={80} height={80} alt='logo' src={logo} />
-                    <h1 className='text-[50px] ml-[10px] text-[#774723]'>Doge</h1>
+                    <h1 className='text-[50px] ml-[10px] text-[#774723]'>stray</h1>
                 </button>
                 <div className='lg:flex hidden w-[70%]'>
                     <div className="rounded-[15px] flex w-full justify-between items-center mt-[10px] px-[35px] h-[50px] bg-[#D5A64E]" style={{ boxShadow: "inset 0 0 10px rgba(5,5,5,0.8)" }}>

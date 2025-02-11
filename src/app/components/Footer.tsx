@@ -11,7 +11,7 @@ export default function Footer() {
 
                     <div className="flex items-center mb-[30px]">
                         <Image width={80} height={80} alt='logo' src={logo} />
-                        <h1 className='text-[50px] ml-[10px] text-[#774723]'>stray</h1>
+                        <h1 className='text-[50px] ml-[10px] text-[#774723]'>STRAY</h1>
                     </div>
                     <div className="flex flex-col items-center">
                         <p className="text-[25px] text-center">INVESTING IN CRYPTOCURRENCIES INVOLVES SIGNIFICANT RISK AND MAY RESULT</p>
